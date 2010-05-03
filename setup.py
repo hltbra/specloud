@@ -6,8 +6,7 @@ version = '0.1'
 setup(name='pyunitbdd',
       version=version,
       description="install nosetests and plugins to ease bdd unit specs",
-      long_description="""\
-""",
+      long_description=open('README.rst').read(),
       classifiers=[], # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
       keywords='test bdd nosetests spec unit',
       author='Hugo Lopes Tavaes',
