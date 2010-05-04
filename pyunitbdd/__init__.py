@@ -7,4 +7,6 @@ def main():
             subprocess.call(['nosetests',
                     '-i',
                     '^(it|ensure|must|should)',
+                    '--with-spec',
+                    '--spec-color',
                     ] + sys.argv[1:]))
