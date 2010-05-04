@@ -44,13 +44,8 @@ For example::
         def test_pass(self):
             pass
 
-    $ pyunitbdd  example.py
-    .....
-    ----------------------------------------------------------------------
-    Ran 5 tests in 0.001s
-    
-    OK
-    $ pyunitbdd  example.py --with-spec
+
+    $ pyunitbdd example.py # it colorizes
     
     Py unit wrap example
     - ensure it pass
@@ -63,18 +58,3 @@ For example::
     Ran 5 tests in 0.002s
     
     OK
-    
-    $ pyunitbdd  example.py --with-spec --spec-color # it colorizes
-    
-    Py unit wrap example
-    - ensure it pass
-    - it should pass
-    - must pass
-    - should pass
-    - pass
-    
-    ----------------------------------------------------------------------
-    Ran 5 tests in 0.002s
-    
-    OK
-    
