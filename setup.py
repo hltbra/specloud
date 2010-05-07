@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import sys, os
 
-version = '0.2'
+version = '0.2.1'
 
 setup(name='pyunitbdd',
       version=version,
@@ -15,6 +15,7 @@ setup(name='pyunitbdd',
       license='MIT',
       packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
       include_package_data=True,
+      package_data={'': ['*.rst']},
       zip_safe=False,
       install_requires=[
           'nose',
