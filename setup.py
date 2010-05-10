@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import sys, os
 
-version = '0.2.2'
+version = '0.2.4'
 
 setup(name='pyunitbdd',
       version=version,
@@ -9,7 +9,7 @@ setup(name='pyunitbdd',
       long_description=open('README.rst').read(),
       classifiers=[], # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
       keywords='test bdd nosetests spec unit',
-      author='Hugo Lopes Tavaes',
+      author='Hugo Lopes Tavares',
       author_email='hltbra@gmail.com',
       url='http://github.com/hugobr/pyunitbdd',
       license='MIT',
