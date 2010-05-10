@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import sys, os
 
-version = '0.2.4'
+version = '0.2.5'
 
 setup(name='pyunitbdd',
       version=version,
@@ -18,7 +18,7 @@ setup(name='pyunitbdd',
       zip_safe=False,
       install_requires=[
           'nose',
-          'pinocchio',
+          'pinocchio>=0.2',
           'figleaf',
           # -*- Extra requirements: -*-
       ],

@@ -7,12 +7,19 @@ Use nosetests and plugins to take BDD specifications easier.
 Installation
 ------------
 
+You need any version of ``pinocchio`` greater than 0.1 first.
+You can download and install it apart and then::
+
     $ easy_install pyunitbdd
     
     or
 
     $ pip install pyunitbdd
 
+    
+Or you can use pip and the requirements resource::
+    
+    $ pip install pyunitbdd -r http://github.com/hugobr/pyunitbdd/raw/master/requirements.txt 
 
 
 Usage
