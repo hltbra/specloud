@@ -66,3 +66,9 @@ The command line tool `specloud` colorizes **green** for tests with no failures 
     Ran 5 tests in 0.003s
 
     OK
+
+
+Old Name
+--------
+
+The project was born as a proof of concept and I named it firstly `pyunitbdd`. But that's a terrible name. So I renamed the project to `specloud`.
