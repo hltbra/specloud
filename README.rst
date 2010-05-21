@@ -18,7 +18,7 @@ Or you can try finding dependencies by yourself and installing specloud without 
 Usage
 =====
 
-Get a python file with BDD-style test names (starting with it, ensure, should, must) and add them to the test suite
+Get a python file with BDD-style test names (starting with it, ensure, should, must, spec, example) and add them to the test suite
 
 
 For example::
@@ -80,7 +80,7 @@ A call to::
 
 is the same doing::
 
-    $ nosetests FILE -i '^(it|ensure|must|should)' --with-spec --spec-color
+    $ nosetests FILE -i '^(it|ensure|must|should|specs?|examples?)' --with-spec --spec-color
 
 
 Old Name
