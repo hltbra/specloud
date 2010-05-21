@@ -7,61 +7,62 @@ Use nosetests and plugins to take BDD specifications easier.
 Installation
 ------------
 
-You need any version of ``pinocchio`` greater than 0.1 first.
-You can download and install it apart and then::
+The easiest way to install specloud is using pip and requirements file::
 
-    $ easy_install specloud
-    
-    or
-
-    $ pip install specloud
-
-    
-Or you can use pip and the requirements resource::
-    
     $ pip install specloud -r http://github.com/hugobr/specloud/raw/master/requirements.txt 
+
+
+Or you can try finding dependencies by yourself and installing specloud without requirements file.
 
 
 Usage
 =====
 
-Get a python file with BDD-like test names (starting with it, ensure, should, must) and add them to the test suite
+Get a python file with BDD-style test names (starting with it, ensure, should, must) and add them to the test suite
 
 
 For example::
 
     $ cat example.py
+
     import unittest
 
 
-    class PyUnitWrapExample(unittest.TestCase):
+    class CalculatorSpec(unittest.TestCase):
 
-        def it_should_pass(self):
+        def it_should_sum_integers(self):
+            # ...
             pass
 
-        def ensure_it_pass(self):
+        def should_not_divide_by_zero(self):
+            # ...
             pass
 
-        def should_pass(self):
+        def must_accept_floats(self):
+            # ...
             pass
 
-        def must_pass(self):
+        def ensure_it_work_with_fractions(self):
+            # ...
             pass
 
-        def test_pass(self):
+        def test_subtract_positive_from_negative_numbers(self):
+            # ...
             pass
 
 
-    $ specloud example.py # it colorizes
-    
-    Py unit wrap example
-    - ensure it pass
-    - it should pass
-    - must pass
-    - should pass
-    - pass
-    
+The command line tool `specloud` colorizes **green** for tests with no failures and no errors and **red** for tests with failures and/or errors::
+
+    $ specloud example.py
+
+    Calculator spec
+    - ensure it work with fractions
+    - it should sum integers
+    - must accept floats
+    - should not divide by zero
+    - subtract positive from negative numbers
+
     ----------------------------------------------------------------------
-    Ran 5 tests in 0.002s
-    
+    Ran 5 tests in 0.003s
+
     OK
