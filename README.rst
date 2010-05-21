@@ -73,7 +73,14 @@ How It Works
 
 SpecLoud is a python package that install `nose`, `pinocchio` and `figleaf` packages, so it can call `nosetests` with `pinocchio` and `figleaf` plugins. `nosetests` is called with some default options to find test methods and `pinocchio` to show pretty and colored messages. `figleaf` is just `pinocchio` dependency.
 
-A call to `specloud FILE` is the same doing `nosetests FILE -i "^(^(it|ensure|must|should)") --with-spec --spec-color`.
+A call to::
+
+    $ specloud FILE
+
+
+is the same doing::
+
+    $ nosetests FILE -i '^(it|ensure|must|should)' --with-spec --spec-color
 
 
 Old Name
