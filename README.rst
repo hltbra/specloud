@@ -9,7 +9,7 @@ Installation
 
 The easiest way to install specloud is using pip and requirements file::
 
-    $ pip install specloud -r http://github.com/hugobr/specloud/raw/master/requirements.txt 
+    $ pip install --no-deps specloud -r http://github.com/hugobr/specloud/raw/master/requirements.txt 
 
 
 Or you can try finding dependencies by yourself and installing specloud without requirements file.
