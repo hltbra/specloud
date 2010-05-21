@@ -20,7 +20,8 @@ setup(name='specloud',
       zip_safe=False,
       install_requires=[
           'nose',
-          'pinocchio',
+          # this dependency is not set up properly in PyPI
+          #'pinocchio',
           'figleaf',
           # -*- Extra requirements: -*-
       ],
