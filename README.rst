@@ -1,4 +1,4 @@
-PyUnitBDD
+SpecLoud
 =========
 
 Use nosetests and plugins to take BDD specifications easier.
@@ -10,16 +10,16 @@ Installation
 You need any version of ``pinocchio`` greater than 0.1 first.
 You can download and install it apart and then::
 
-    $ easy_install pyunitbdd
+    $ easy_install specloud
     
     or
 
-    $ pip install pyunitbdd
+    $ pip install specloud
 
     
 Or you can use pip and the requirements resource::
     
-    $ pip install pyunitbdd -r http://github.com/hugobr/pyunitbdd/raw/master/requirements.txt 
+    $ pip install specloud -r http://github.com/hugobr/specloud/raw/master/requirements.txt 
 
 
 Usage
@@ -52,7 +52,7 @@ For example::
             pass
 
 
-    $ pyunitbdd example.py # it colorizes
+    $ specloud example.py # it colorizes
     
     Py unit wrap example
     - ensure it pass
