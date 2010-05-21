@@ -1,5 +1,5 @@
 SpecLoud
-=========
+========
 
 Use nosetests and plugins to take BDD specifications easier.
 
@@ -80,8 +80,7 @@ A call to::
 
 is the same doing::
 
-    $ nosetests FILE -i '^(it|ensure|must|should|specs?|examples?)' --with-spec --spec-color
-
+    $ nosetests -i '^(it|ensure|must|should|specs?|examples?)' -i '(specs?(.py)?|examples?(.py)?)$' '--with-spec' '--spec-color'
 
 Old Name
 --------
