@@ -22,3 +22,8 @@ class CalculatorSpec(unittest.TestCase):
     def test_subtract_positive_from_negative_numbers(self):
         # ...
         pass
+
+    def deve_calcular_raizes_quadradas(self):
+            # ...
+            pass
+

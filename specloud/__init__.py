@@ -6,9 +6,10 @@ def main():
     sys.exit(
             subprocess.call(['nosetests',
                     '-i',
-                    '^(it|ensure|must|should|specs?|examples?)',
+                    '^(it|ensure|must|should|specs?|examples?|deve)',
                     '-i',
                     '(specs?(.py)?|examples?(.py)?)$',
                     '--with-spec',
                     '--spec-color',
                     ] + sys.argv[1:]))
+

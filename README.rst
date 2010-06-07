@@ -9,7 +9,7 @@ Installation
 
 The easiest way to install specloud is using pip and requirements file::
 
-    $ pip install --no-deps specloud -r http://github.com/hugobr/specloud/raw/master/requirements.txt 
+    $ pip install --no-deps specloud -r http://github.com/hugobr/specloud/raw/master/requirements.txt
 
 
 Or you can try finding dependencies by yourself and installing specloud without requirements file.
@@ -18,7 +18,7 @@ Or you can try finding dependencies by yourself and installing specloud without 
 Usage
 =====
 
-Get a python file with BDD-style test names (starting with it, ensure, should, must, spec, example) and add them to the test suite
+Get a python file with BDD-style test names (starting with it, ensure, should, must, spec, example, deve) and add them to the test suite
 
 
 For example::
@@ -50,6 +50,10 @@ For example::
             # ...
             pass
 
+        def deve_calcular_raizes_quadradas(self):
+            # ...
+            pass
+
 
 The command line tool `specloud` colorizes **green** for tests with no failures and no errors and **red** for tests with failures and/or errors::
 
@@ -61,6 +65,7 @@ The command line tool `specloud` colorizes **green** for tests with no failures 
     - must accept floats
     - should not divide by zero
     - subtract positive from negative numbers
+    - deve calcular raizes quadradas
 
     ----------------------------------------------------------------------
     Ran 5 tests in 0.003s
@@ -80,9 +85,10 @@ A call to::
 
 is the same doing::
 
-    $ nosetests -i '^(it|ensure|must|should|specs?|examples?)' -i '(specs?(.py)?|examples?(.py)?)$' '--with-spec' '--spec-color'
+    $ nosetests -i '^(it|ensure|must|should|specs?|examples?|deve)' -i '(specs?(.py)?|examples?(.py)?)$' '--with-spec' '--spec-color'
 
 Old Name
 --------
 
 The project was born as a proof of concept and I named it firstly `pyunitbdd`. But that's a terrible name. So I renamed the project to `specloud`.
+
