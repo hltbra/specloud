@@ -8,7 +8,7 @@ def main():
                     '-i',
                     '^(it|ensure|must|should|deve|specs?|examples?)',
                     '-i',
-                    '(specs?(.py)?|examples?(.py)?)$',
+                    '(specs?|examples?|exemplos?)(.py)?$',
                     '--with-spec',
                     '--spec-color',
                     ] + sys.argv[1:]))
