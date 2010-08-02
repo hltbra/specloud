@@ -6,7 +6,7 @@ def main():
     sys.exit(
             subprocess.call(['nosetests',
                     '-i',
-                    '^(it|ensure|must|should|specs?|examples?|deve)',
+                    '^(it|ensure|must|should|deve|specs?|examples?)',
                     '-i',
                     '(specs?(.py)?|examples?(.py)?)$',
                     '--with-spec',

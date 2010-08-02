@@ -24,6 +24,6 @@ class CalculatorSpec(unittest.TestCase):
         pass
 
     def deve_calcular_raizes_quadradas(self):
-            # ...
-            pass
+        # ...
+        pass
 
