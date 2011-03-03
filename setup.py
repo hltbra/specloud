@@ -20,10 +20,12 @@ setup(name='specloud',
       zip_safe=False,
       install_requires=[
           'nose',
-          # this dependency is not set up properly in PyPI
-          #'pinocchio',
           'figleaf',
+          'pinocchio',
           # -*- Extra requirements: -*-
+      ],
+      dependency_links = [
+          'http://darcs.idyll.org/~t/projects/pinocchio-latest.tar.gz#egg=pinocchio-dev',
       ],
       entry_points="""
       # -*- Entry points: -*-
@@ -31,3 +33,4 @@ setup(name='specloud',
       specloud = specloud:main
       """,
       )
+
