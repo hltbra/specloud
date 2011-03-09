@@ -31,10 +31,10 @@ setup(name='specloud',
       install_requires=[
           'nose',
           'figleaf',
-          'pinocchio',
+          'pinocchio==0.2',
       ],
       dependency_links = [
-          'http://darcs.idyll.org/~t/projects/pinocchio-latest.tar.gz#egg=pinocchio',
+          'http://darcs.idyll.org/~t/projects/pinocchio-latest.tar.gz#egg=pinocchio-0.2',
       ],
       entry_points="""
       [console_scripts]
