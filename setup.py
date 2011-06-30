@@ -29,7 +29,7 @@ setup(name='specloud',
       include_package_data=True,
       zip_safe=False,
       install_requires=[
-          'nose==0.11.4',
+          'nose',
           'figleaf',
           'pinocchio==0.2',
       ],
