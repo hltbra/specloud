@@ -31,10 +31,7 @@ setup(name='specloud',
       install_requires=[
           'nose',
           'figleaf',
-          'pinocchio==0.2',
-      ],
-      dependency_links = [
-          'https://github.com/unpluggd/pinocchio/tarball/0.2#egg=pinocchio-0.2',
+          'pinocchio==0.3',
       ],
       entry_points="""
       [console_scripts]
