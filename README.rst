@@ -89,3 +89,9 @@ Old Name
 
 The project was born as a proof of concept and I named it firstly `pyunitbdd`. But that's a terrible name. So I renamed the project to `specloud`.
 
+
+
+.. image:: https://d2weczhvl823v0.cloudfront.net/hltbra/specloud/trend.png
+   :alt: Bitdeli badge
+   :target: https://bitdeli.com/free
+
